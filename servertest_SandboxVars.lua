@@ -1,7 +1,5 @@
 SandboxVars = {
     VERSION = 5,
-    -- WARNING FROM RUDY - CHANGING THIS WILL NOT AFFECT ANYTHING. 
-    -- SEE ZOMBIE CONFIG AT THE END OF THE FILE INSTEAD
     -- Changing this sets the "Population Multiplier" advanced option. Default=Normal
     -- 1 = Insane
     -- 2 = Very High
