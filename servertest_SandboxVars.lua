@@ -91,7 +91,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    FoodLoot = 6,
+    FoodLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -99,7 +99,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    CannedFoodLoot = 6,
+    CannedFoodLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -115,7 +115,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    SurvivalGearsLoot = 6,
+    SurvivalGearsLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -123,7 +123,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    MedicalLoot = 6,
+    MedicalLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -131,7 +131,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    WeaponLoot = 6,
+    WeaponLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -139,7 +139,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    RangedWeaponLoot = 6,
+    RangedWeaponLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -147,7 +147,7 @@ SandboxVars = {
     -- 4 = Rare
     -- 5 = Normal
     -- 6 = Common
-    AmmoLoot = 6,
+    AmmoLoot = 4,
     -- Default=Rare
     -- 1 = None
     -- 2 = Insanely Rare
@@ -191,7 +191,7 @@ SandboxVars = {
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
     -- Governs whether cars are locked, need keys to start etc.
-    VehicleEasyUse = true,
+    VehicleEasyUse = false,
     -- Controls the speed of plant growth. Default=Normal
     -- 1 = Very Fast
     -- 2 = Fast
@@ -234,7 +234,7 @@ SandboxVars = {
     -- 5 = Often
     LockedHouses = 6,
     -- Spawn with chips, water bottle, school bag, baseball bat and a hammer.
-    StarterKit = true,
+    StarterKit = false,
     -- Nutritional value of food affects the player's condition.
     Nutrition = true,
     -- Define how fast the food will spoil inside or outside fridge. Default=Normal
@@ -351,7 +351,7 @@ SandboxVars = {
     -- 2 = Low
     -- 3 = Normal
     -- 4 = High
-    ConstructionBonusPoints = 4,
+    ConstructionBonusPoints = 3,
     -- Governs the ambient lighting at night. Default=Normal
     -- 1 = Pitch Black
     -- 2 = Dark
@@ -366,7 +366,7 @@ SandboxVars = {
     -- Increase and decrease the impact injuries have on your body, and their healing time. Default=Normal
     -- 1 = Low
     -- 2 = Normal
-    InjurySeverity = 1,
+    InjurySeverity = 2,
     -- Enable or disable broken limbs when survivors receive injuries from impacts, zombie damage and falls.
     BoneFracture = true,
     -- How long before zombie bodies disappear. Minimum=-1.00 Maximum=2147483647.00 Default=216.00
@@ -403,11 +403,11 @@ SandboxVars = {
     -- If disabled snow will not accumulate on ground but will still be visible on vegetation and rooftops.
     EnableSnowOnGround = true,
     -- When enabled certain melee weapons will be able to strike multiple zombies in one hit.
-    MultiHitZombies = true,
+    MultiHitZombies = false,
     -- Chance of being bitten when a zombie attacks from behind. Default=High
     -- 1 = Low
     -- 2 = Medium
-    RearVulnerability = 1,
+    RearVulnerability = 3,
     -- Disable to walk unimpeded while melee attacking.
     AttackBlockMovements = true,
     AllClothesUnlocked = false,
@@ -498,7 +498,7 @@ SandboxVars = {
     -- The higher the value, the longer lightbulbs last before breaking. If 0, lightbulbs will never break. Does not affect vehicle headlights. Minimum=0.00 Maximum=1000.00 Default=1.00
     LightBulbLifespan = 1.0,
     Map = {
-        AllowMiniMap = true,
+        AllowMiniMap = false,
         AllowWorldMap = true,
         MapAllKnown = false,
     },
@@ -512,12 +512,12 @@ SandboxVars = {
         -- 1 = Superhuman
         -- 2 = Normal
         -- 3 = Weak
-        Strength = 3,
+        Strength = 2,
         -- Controls the difficulty to kill zombies. Default=Normal
         -- 1 = Tough
         -- 2 = Normal
         -- 3 = Fragile
-        Toughness = 3,
+        Toughness = 2,
         -- Controls how the zombie virus spreads. Default=Blood + Saliva
         -- 1 = Blood + Saliva
         -- 2 = Saliva Only
@@ -561,12 +561,12 @@ SandboxVars = {
         -- 1 = Eagle
         -- 2 = Normal
         -- 3 = Poor
-        Sight = 3,
+        Sight = 2,
         -- Controls zombie hearing radius. Default=Normal
         -- 1 = Pinpoint
         -- 2 = Normal
         -- 3 = Poor
-        Hearing = 3,
+        Hearing = 2,
         -- Zombies that have not seen/heard player can attack doors and constructions while roaming.
         ThumpNoChasing = false,
         -- Governs whether or not zombies can destroy player constructions and defences.
@@ -578,7 +578,7 @@ SandboxVars = {
         -- Allows zombies to trigger house alarms when breaking through windows and doors.
         TriggerHouseAlarm = false,
         -- When enabled if multiple zombies are attacking they can drag you down to feed. Dependent on zombie strength.
-        ZombiesDragDown = false,
+        ZombiesDragDown = true,
         -- When enabled zombies will have a chance to lunge after climbing over a fence if you're too close.
         ZombiesFenceLunge = true,
         -- Default=Some zombies in the world will pretend to be dead
@@ -588,15 +588,15 @@ SandboxVars = {
     },
     ZombieConfig = {
         -- Set by the "Zombie Count" population option. 4.0 = Insane, Very High = 3.0, 2.0 = High, 1.0 = Normal, 0.35 = Low, 0.0 = None. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationMultiplier = 0.2,
+        PopulationMultiplier = 1.0,
         -- Adjusts the desired population at the start of the game. Minimum=0.00 Maximum=4.00 Default=1.00
-        PopulationStartMultiplier = 0.6,
+        PopulationStartMultiplier = 1.0,
         -- Adjusts the desired population on the peak day. Minimum=0.00 Maximum=4.00 Default=1.50
         PopulationPeakMultiplier = 1.5,
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 0.0,
+        RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 16.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
